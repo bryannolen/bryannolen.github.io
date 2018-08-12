@@ -3,6 +3,6 @@ function translocate(destination) {
 };
 
 $(document).ready(function() {
-    $("#gobutton").click(function(){translocate($("#destination").val()});
+    $("#gobutton").click(function(){translocate($("#destination").val())});
     console.log("STARTED");
 });
