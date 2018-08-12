@@ -1,3 +1,8 @@
+/**
+printf "Lorem ipsum dolor sit amet, ..." | \
+  openssl enc -e -base64 -A -aes-256-cbc -pass pass:"my-password"
+**/
+
 function translocate(destination) {
   console.log(destination);
   encrypted = CryptoJS.AES.encrypt(destination, "test").toString();
