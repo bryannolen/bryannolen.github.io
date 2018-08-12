@@ -112,15 +112,10 @@ encrypt("hello", "world")
 
 function translocate(destination) {
     console.log(destination);
-    cyphered = encrypt(
-        "hello",
-        "test",
-      );
-    console.log(cyphered);
-    decrypt(
-        "hello",
-        cyphered,
-    ).then(console.log);  
+    encrypt(destination, "world")
+      .then(v => console.log("ENCRYPTED", v) || v)
+      .then(v => decrypt("hello", v))
+      .then(v => console.log("DECRYPTED ", v) || v);
 };
 
 $(document).ready(function() {
