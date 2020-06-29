@@ -24,6 +24,7 @@ $(document).ready(function() {
     $("#roll_d6").click(function(){rollDie(6)});
     $("#roll_d8").click(function(){rollDie(8)});
     $("#roll_d10").click(function(){rollDie(10)});
+    $("#roll_d12").click(function(){rollDie(12)});
     $("#roll_d20").click(function(){rollDie(20)});
     $("#roll_d50").click(function(){rollDie(50)});
     $("#roll_d100").click(function(){rollDie(100)});
