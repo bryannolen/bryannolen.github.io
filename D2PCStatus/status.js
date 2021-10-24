@@ -29,10 +29,10 @@ let getStatus = () => {
             let text = `${data[0].Name}<br/>
     Status: ${data[0].Status}<br/>
     Maint: ${data[0].Maintenance}<br/>
-    Last Update: ${date}<br/>
+    <br/>
     ${data[1].Name}<br/>
     Status: ${data[1].Status}<br/>
-    Maint: ${data[2].Maintenance}<br/>
+    Maint: ${data[1].Maintenance}<br/>
     Last Update: ${date}<br/>`
 
             if (data[0].Status == "Degraded" || data[1].Status == "Degraded") {
