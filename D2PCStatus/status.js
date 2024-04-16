@@ -39,7 +39,7 @@ let getStatus = () => {
             if (data[0].Status == "Degraded" || data[1].Status == "Degraded") {
                 infoDiv.style.backgroundColor="red"
             } else if (data[0].Status == "Interrupted") {
-                infoDiv.style.backgroundColor="yellow"
+                infoDiv.style.backgroundColor="darkorange"
             } else if (data[0].Status == "Online" || data[1].Status == "Online") {
                 infoDiv.style.backgroundColor="green"
             } else {
